@@ -27,6 +27,19 @@
     background-color: white;
   }
 
+  @media (max-width: 500px){
+    .search-inp{
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  @media (max-width : 768px){
+    .login-info{
+      padding-bottom: 1rem;
+      border-bottom:1px solid gray ;
+    }
+  }
+
 
 </style>
 
@@ -47,7 +60,7 @@
           <button class="btn search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
         </form> 
       </div>
-      <div class="navbar-nav ms-auto">
+      <div class="login-info navbar-nav ms-auto">
         <a class="nav-link" href="/listings/new">Airbnb your home</a>
         <% if(!currUser){ %>
           <a class="nav-link" href="/signup"><b>Sign Up</b></a>

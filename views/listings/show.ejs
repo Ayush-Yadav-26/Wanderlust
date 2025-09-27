@@ -73,7 +73,7 @@
                 
                 <% for(review of listing.reviews){ %>
                     <% if(!listing.reviews.length) %>
-                    <div class="card col-5 ms-4 mb-3">
+                    <div class="card col-sm-5 col-11 ms-sm-4 ms-3 mb-3">
                         <div class="card-body">
                             <h5 class="card-title">@<%= review.author.username %></h5>
                             <p class="card-text starability-result" data-rating="<%= review.rating %>"></p>
